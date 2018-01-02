@@ -236,7 +236,7 @@ void render(int displayTexture, int sourceTexture, int width, int height) {
 	
 }
 
-static void APIENTRY openglDebugCallback(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar *message, void *userData) {
+static void APIENTRY openglDebugCallback(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar *message, const void *userData) {
 	std::cout << message << '\n';
 }
 
